@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Source+Code+Pro:wght@500&display=swap');
+
+:root {
+  --main-font: 'Kumar One Outline', cursive;
+  --sec-font: 'Source Code Pro', monospace;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  text-align: center;
+  font-family: var(--main-font);
+  background-image: linear-gradient(to top, #fef9d7 0%, #d299c2 100%);
+  color: #37005f;
+  background-repeat: no-repeat;
+}
+
+.calculator {
+  max-width: 700px;
+  height: 100%;
+  margin: 13px auto;
+  padding: 15px 50px;
+}
+
+.keypad {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.screen-container {
+  grid-column: 1 / 6;
+  grid-row: 1 / 1;
+  width: 100%;
+}
+
+.screen {
+  background-color: #d299c2;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: var(--sec-font);
+  font-size: 36px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #fef9d715;
+  outline: 3px solid #fef9d750;
+  border-radius: 5px;
+  font-size: 36px;
+}
+
+.clear-entry {
+  grid-column: 1 / 1;
+  grid-row: 2 / 4;
+  padding: 60px 0;
+}
+
+.svn-btn {
+  grid-column: 2 / 2; 
+}
+
+.egt-btn {
+  grid-column: 3 / 3;
+}
+
+.nne-btn {
+  grid-column: 4 / 4;
+}
+
+.dvn-btn {
+  grid-column: 5 / 5;
+}
+
+.svn-btn, .egt-btn, .nne-btn, .dvn-btn {
+  grid-row: 2 / 2;
+}
+
+.all-clear {
+  grid-column: 1 / 1;
+  grid-row: 4 / 6;
+  padding: 60px 0;
+}
+
+.for-btn {
+  grid-column: 2 / 2;
+}
+
+.fiv-btn {
+  grid-column: 3 / 3;
+}
+
+.six-btn {
+  grid-column: 4 / 4;
+}
+
+.mlt-btn {
+  grid-column: 5 / 5;
+}
+
+.for-btn, .fiv-btn, .six-btn, .mlt-btn {
+  grid-row: 3 / 3;
+}
+
+.one-btn {
+  grid-column: 2 / 2;
+}
+
+.two-btn {
+  grid-column: 3 / 3;
+}
+
+.tre-btn {
+  grid-column: 4 / 4;
+}
+
+.mns-btn {
+  grid-column: 5 / 5;
+}
+
+.one-btn, .two-btn, .tre-btn, .mns-btn {
+  grid-row: 4 / 4;
+}
+
+.zro-btn {
+  grid-column: 2 / 2;
+}
+
+.dot-btn {
+  grid-column: 3 / 3;
+}
+
+.eql-btn {
+  grid-column: 4 / 4;
+}
+
+.add-btn {
+  grid-column: 5 / 5;
+}
+
+.zro-btn, .dot-btn, .eql-btn, .add-btn {
+  grid-row: 5 / 5;
+}
+
+span {
+  display: block;
+}
+
+footer {
+  background-color: #37005f;
+  color: #fef9d7;
+  font-family: var(--sec-font);
+  padding: 15px 0;
+}
